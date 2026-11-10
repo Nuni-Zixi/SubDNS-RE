@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>门牌号 · SubDNS — 免费子域名（预览）</title>
+<style>
+  *{box-sizing:border-box} body{margin:0;background:#faf7f1;color:#211d16;font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none} .wrap{max-width:48rem;margin:0 auto;padding:0 1.25rem}
+  header{border-bottom:1px solid #e3ddd0} header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:1rem;padding-bottom:1rem}
+  nav{display:flex;gap:1.25rem;align-items:center;font-size:.875rem;color:#6f6656} nav a:hover{color:#211d16}
+  .btn{border:1px solid #211d16;padding:.375rem .75rem;color:#211d16} .btn:hover{background:#211d16;color:#faf7f1}
+  .btn-solid{display:inline-block;background:#211d16;color:#faf7f1;padding:.625rem 1.25rem;font-size:.875rem} .btn-solid:hover{background:#3a342a}
+  section{border-top:1px solid #e3ddd0;padding:3.5rem 0} section:first-child{border-top:none}
+  .kicker{font-size:.75rem;letter-spacing:.25em;color:#8a8172;margin:0}
+  h1{font-family:Georgia,"Songti SC","STSong",serif;font-weight:600;font-size:2.6rem;line-height:1.35;margin:1.5rem 0 0}
+  h2{font-family:Georgia,"Songti SC","STSong",serif;font-weight:600;font-size:1.5rem;margin:1rem 0 0}
+  h3{font-size:1rem;margin:0} p{line-height:1.7;color:#554d3f} .small{font-size:.875rem}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;border-top:1px solid #e3ddd0;border-bottom:1px solid #e3ddd0;padding:1.25rem 0;margin-top:2.5rem;font-size:.875rem}
+  .stats dt{color:#8a8172} .stats dd{margin:.25rem 0 0;font-weight:500;color:#211d16}
+  .row{display:grid;grid-template-columns:3rem 1fr;gap:.5rem;border-top:1px solid #e3ddd0;padding:1.25rem 0}
+  .row .no{font-family:ui-monospace,monospace;font-size:.875rem;color:#8a8172}
+  .row p{margin:.375rem 0 0;font-size:.875rem}
+  .rules{display:grid;grid-template-columns:7rem 1fr;gap:.5rem;border-top:1px solid #e3ddd0;padding:.875rem 0;font-size:.875rem}
+  .rules dt{color:#8a8172} .rules dd{margin:0}
+  details{border-top:1px solid #e3ddd0;padding:1rem 0} summary{cursor:pointer;font-size:.875rem;font-weight:500;color:#211d16}
+  details p{font-size:.875rem;margin:.5rem 0 0}
+  .mono{font-family:ui-monospace,monospace;font-size:.85em} .muted{color:#8a8172}
+  footer{border-top:1px solid #e3ddd0} footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.75rem;padding-top:1.5rem;padding-bottom:1.5rem;font-size:.75rem;color:#8a8172}
+  .center{text-align:center}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a href="#" style="font-size:.875rem;font-weight:600">门牌号 <span style="font-weight:400;color:#8a8172">· SubDNS</span></a>
+  <nav><a href="#features">能做什么</a><a href="#steps">怎么用</a><a href="#faq">问答</a><a class="btn" href="#">注册</a></nav>
+</div></header>
+<main class="wrap">
+  <section style="padding:4.5rem 0">
+    <p class="kicker">NO. 01 — 免费子域名，长期可用</p>
+    <h1>给项目一个<br>安静的门牌号。</h1>
+    <p style="max-width:36rem;margin-top:1.5rem">注册后可以领取两个 <span class="mono">your-domain.cc</span> 子域名。填一条解析，就能把博客、作品集或一个小 API，放到一个记得住的地址上。</p>
+    <dl class="stats">
+      <div><dt>免费额度</dt><dd>2 个 / 账户</dd></div>
+      <div><dt>解析记录</dt><dd>最多 8 条 / 域名</dd></div>
+      <div><dt>费用</dt><dd>0 元</dd></div>
+    </dl>
+    <p class="small muted" style="margin-top:1rem">适合放：个人主页 · 博客 · 文档站 · 演示环境 · 小型 API · 图床</p>
+    <p style="margin-top:2rem"><a class="btn-solid" href="#">领取一个 →</a></p>
+  </section>
+
+  <section id="features">
+    <p class="kicker">01 / 能做什么</p><h2>不复杂，但不凑合。</h2>
+    <p class="small">这里只做几件事：把子域名领给你，把解析写进 DNS，让地址能打开。</p>
+    <div style="margin-top:2rem">
+      <article class="row"><span class="no">01</span><div><h3>领取即用</h3><p>输入想要的前缀，实时查重。没被占用就能领下，先放进「我的域名」，再慢慢配解析。</p></div></article>
+      <article class="row"><span class="no">02</span><div><h3>五种记录</h3><p>A、AAAA、CNAME、TXT、MX 都能填，可以改主机记录和 TTL，每个域名最多 8 条。</p></div></article>
+      <article class="row"><span class="no">03</span><div><h3>可开 Cloudflare 代理</h3><p>打开代理后，子域名走 Cloudflare 网络并自动用上 HTTPS；指向 Vercel、Netlify 等平台时，也可以用它们签发的证书。</p></div></article>
+      <article class="row"><span class="no">04</span><div><h3>随时可改可删</h3><p>解析填错了就改，不想要了就删。删除子域名时，对应的 DNS 记录会一并清理。</p></div></article>
+      <article class="row"><span class="no">05</span><div><h3>免费额度</h3><p>每个账户默认 2 个免费子域名，长期有效。不绑卡，也没有自动续费。</p></div></article>
+    </div>
+  </section>
+
+  <section id="steps">
+    <p class="kicker">02 / 怎么用</p><h2>三步，写一条记录。</h2>
+    <p class="small">不用装客户端，也不用等审核。</p>
+    <div style="margin-top:2rem">
+      <article class="row"><span class="no">01</span><div><h3>注册账户</h3><p>用邮箱收一个验证码，设置密码。已有账号可以直接登录。</p></div></article>
+      <article class="row"><span class="no">02</span><div><h3>领取前缀</h3><p>选一个没被占用的前缀，比如 studio，你会得到 studio.your-domain.cc。</p></div></article>
+      <article class="row"><span class="no">03</span><div><h3>填一条解析</h3><p>选记录类型、填目标地址、保存。通常约 1 分钟内生效。</p></div></article>
+    </div>
+    <p class="mono muted" style="font-size:.75rem;margin-top:1rem">例：CNAME → cname.vercel-dns.com</p>
+  </section>
+
+  <section>
+    <p class="kicker">03 / 规则</p><h2>就这些。</h2>
+    <p class="small">没有积分，没有签到，也没有需要研究的套餐。</p>
+    <dl style="margin-top:2rem">
+      <div class="rules"><dt>免费额度</dt><dd>每个新账户 2 个子域名</dd></div>
+      <div class="rules"><dt>解析条数</dt><dd>每个域名最多 8 条</dd></div>
+      <div class="rules"><dt>记录类型</dt><dd>A / AAAA / CNAME / TXT / MX</dd></div>
+      <div class="rules"><dt>生效时间</dt><dd>保存后约 1 分钟</dd></div>
+      <div class="rules"><dt>费用</dt><dd>0 元，不需要绑定支付方式</dd></div>
+      <div class="rules"><dt>使用限制</dt><dd>不能用于钓鱼、诈骗、侵权或违反法律的内容</dd></div>
+    </dl>
+  </section>
+
+  <section id="faq">
+    <p class="kicker">04 / 问答</p><h2>常见问题。</h2>
+    <div style="margin-top:2rem">
+      <details><summary>真的免费吗？</summary><p>是。2 个子域名长期免费，解析修改也不收费。</p></details>
+      <details><summary>能用来做什么？</summary><p>个人主页、博客、文档站、演示环境、小型 API 都可以。把 CNAME 指向 Vercel、Netlify、Cloudflare Pages、GitHub Pages，或者用 A / AAAA 指向自己的服务器。</p></details>
+      <details><summary>修改后多久生效？</summary><p>通常约 1 分钟。TTL 默认自动，最低 60 秒。</p></details>
+      <details><summary>可以绑定自己的域名吗？</summary><p>目前只提供 your-domain.cc 下的子域名，暂不支持绑定其他根域名。</p></details>
+      <details><summary>违规使用会怎样？</summary><p>域名会被停用或删除，账户也可能被封禁。请只用于合法、正常的项目。</p></details>
+    </div>
+  </section>
+
+  <section class="center">
+    <h2>先领一个，再慢慢想名字。</h2>
+    <p class="small">注册需要一分钟，2 个名额即时到账。</p>
+    <p style="margin-top:1.5rem"><a class="btn-solid" href="#">去注册 →</a></p>
+  </section>
+</main>
+<footer><div class="wrap"><span>门牌号 · SubDNS — 免费子域名（占位品牌，待正式命名）</span><span class="mono">*.your-domain.cc</span></div></footer>
+</body>
+</html>

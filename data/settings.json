@@ -1,0 +1,9 @@
+{
+  "siteName": "SubDNS",
+  "siteDescription": "Subdomain Management Platform",
+  "registrationOpen": "true",
+  "defaultSubdomainLimit": "2",
+  "maxSubdomainLength": "63",
+  "payment_mode": "test",
+  "paymentMode": "test"
+}
